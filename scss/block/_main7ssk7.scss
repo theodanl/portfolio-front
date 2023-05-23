@@ -43,11 +43,12 @@
         justify-content: flex-end;
         align-items: center;
         margin-right: 5em;
+        transition: all 1s ease-in-out;
     }
 
-    @keyframes animka {
-        0% {
-            opacity: 2 ;
-        }
+    .artur__img:hover{
+        transform: scale(1.2);
     }
+
+    
 }

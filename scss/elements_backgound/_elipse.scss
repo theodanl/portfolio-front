@@ -5,7 +5,7 @@
     .elipse{
         z-index: 6;
         position: absolute;
-        border-radius: 50%;
+        border-radius: 50%; 
     }
 
     .elipse-1{
@@ -50,7 +50,7 @@
         filter: blur(20px);
         width: 235px;
         height: 235px;
-        right: 50em;
+        right: 44em;
      }
 
      .elipse-6{
@@ -58,7 +58,7 @@
         filter: blur(20px);
         width: 380px;
         height: 380px;
-        right: 30em ;
+        right: 24em ;
      }
 
      .elipse-7{
@@ -92,8 +92,8 @@
         filter: blur(20px);
         width: 235px;
         height: 235px;
-        right: 30em;
-        top: 70em;
+        right: 17em;
+        top: 79em;
      }
 
      .elipse-11{
@@ -101,7 +101,16 @@
         filter: blur(20px);
         width: 235px;
         height: 235px;
-        right: 36em;
-        top: 79em;
+        right: 23em;
+        top: 89em;
+     }
+
+     .elipse-12{
+        background: linear-gradient(106.5deg, rgba(255, 230, 0, 0.8) 7.41%, rgba(255, 92, 0, 0.8) 129.56%);
+        filter: blur(20px);
+        width: 225px;
+        height: 225px;
+        left: 20em;
+        top: 59em;
      }
 }
