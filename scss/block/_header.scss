@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    min-height: 68px;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 5;
+    
+    .header__menu {
+        display: flex;
+        gap: 47px;
+        text-align: center;
+        align-items: center;
+        margin-right: 5rem;
+    }
+
+    .header__menu-items{
+        font-weight: 600;
+        transition: all .3s ease-in-out;
+    }
+
+    .header__menu-items:hover{
+        transform: scale(1.2);
+    }
+}
