@@ -15,7 +15,6 @@ html,body{
 
 body{
     color: #2D2D2D;
-    background-color: #FFFFFF;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -34,9 +33,36 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc((100% - 1300px) / 2);
+  background-image: url("../img/back.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(2px);
+}
+
+.container::before {
+    /* background-size: cover; */
+    left: 0;
+    /* z-index: -1; */
+  }
+  
+  .container::after {
+    /* background-size: cover; */
+    right: 0;
+    /* z-index: -1; */
+  }
 
 /* will-change */
 

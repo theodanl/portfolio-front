@@ -30,6 +30,7 @@
         flex-wrap: wrap;
         margin-top: 9em;
         gap: 2rem;
+        margin-left: 5rem;
     }
 
     .block-artur__messangers{
@@ -41,6 +42,12 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 1));
+        margin-right: 5em;
+    }
+
+    @keyframes animka {
+        0% {
+            opacity: 2 ;
+        }
     }
 }
