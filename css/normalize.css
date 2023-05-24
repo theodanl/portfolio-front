@@ -28,6 +28,8 @@ body{
     flex-direction: column;
 }
 
+
+
 .main{
     flex: 1 0 auto;
 }
@@ -44,7 +46,7 @@ body{
   top: 0;
   bottom: 0;
   width: calc((100% - 1300px) / 2);
-  background-image: url("../img/back.jpeg");
+  background-image: url("../img/аыва.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,16 +55,14 @@ body{
 }
 
 .container::before {
-    /* background-size: cover; */
     left: 0;
-    /* z-index: -1; */
+
   }
-  
+
   .container::after {
-    /* background-size: cover; */
     right: 0;
-    /* z-index: -1; */
   }
+
 
 /* will-change */
 

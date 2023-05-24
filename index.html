@@ -8,14 +8,19 @@
     <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/global.css">
        <!-- ПЛАГИНЫ -->
        <script src="./js/gsap/gsap.min.js" defer></script>
        <script src="./js/gsap/ScrollSmoother.min.js" defer></script>
        <script src="./js/gsap/ScrollTrigger.min.js" defer></script>
+       <script src="./js/gear.js" defer></script>
+    <script src="./js/popup1.js" defer></script>
+    <script src="./js/popup2.js" defer></script>
+    <script src="./js/popup3.js" defer></script>
+    <script src="./js/popup4.js" defer></script>
+    <script src="./js/popup5.js" defer></script>
     <script src="./js/script.js" defer></script>
     <script src="./js/BlockNews.js" defer></script>
-
- 
 
     <!-- ФРЕЙМ -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css" />
@@ -82,10 +87,47 @@
                     <h1 class="slider__matches-title">Achievements</h1>
                     <!-- СЛАЙДЕР МАТЧИ -->
                     <section class="slider__matches">
-                        <!-- <h1 class="slider__matches-title">Achievements</h1> -->
-                        <!-- тут слайдер -->
                         <div class="stock_order">
                             <div class="stock_order"><img class="order_img" src="./img/slider1.svg" alt="stock"></div>
+                        </div>
+                    </section>
+                    <!-- ДЕВАЙСЫ -->
+                    <h1 class="GAS-title">Gear and Setup</h1>
+                    <section class="gear_and_settings">
+                        <!-- модалка -->
+
+
+                        <div class="menu__GAS">
+                            <div class="menu__GAS-item">           
+                                <div id="gears1" class="image-container-1 container-img">
+                                    <img class="visible" src="./img/klava.svg" alt="klava">
+                                    <img class="hidden" src="./img/klava (2).svg" alt="klava1">
+                                </div>
+                            </div>  
+                            <div class="menu__GAS-item">
+                                <div id="gears2" class="image-container-2 container-img">
+                                    <img class="visible" src="./img/mish.svg" alt="mish">
+                                    <img class="hidden" src="./img/mish (1).svg" alt="mish1">
+                                </div>
+                            </div>
+                            <div class="menu__GAS-item">
+                                <div id="gears3" class="image-container-3 container-img">
+                                    <img class="visible" src="./img/kovrik.svg" alt="kovrik">
+                                    <img class="hidden" src="./img/kovrik (1).svg" alt="kovrik1">
+                                </div>
+                            </div>
+                            <div class="menu__GAS-item">
+                                <div id="gears4" class="image-container-4 container-img">
+                                    <img class="visible" src="./img/моник.svg" alt="monik">
+                                    <img class="hidden" src="./img/моник (1).svg" alt="monik1">
+                                </div>
+                            </div>
+                            <div class="menu__GAS-item">
+                                <div id="gears5" class="image-container-5 container-img">
+                                    <img class="visible" src="./img/headset.jpg" alt="headset">
+                                    <img class="GAS-img__hover hidden" src="./img/headset (1).svg" alt="headset1">
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </main>
@@ -96,5 +138,87 @@
             </div>
         </div>
     </div>
+    <!-- клава -->
+    <div class="modal modal-global">
+        <div class="modal__content">
+          <div class="block-gears1">
+            <div class="block-gears__items">
+                <a href="#"><img src="./img/BLOCKKLAVA.svg" alt="klava"></a>
+                <P>The tournament-proven PRO gaming keyboard.
+
+                    SPECS & DETAILS
+                    
+                    DIMENSIONS
+                    
+                    Height: 34 mm
+                    Width: 361 mm
+                    Depth: 153 mm</P>
+            </div>
+          </div>
+          <button class="modal__close">Закрыть</button>
+        </div>
+      </div>       
+      <!-- мышка -->
+      <div class="modal2 modal-global">
+        <div class="modal__content">
+          <div class="block-gears2">
+            <div class="block-gears__items">
+                <a href="#"><img src="./img/НЕОБРЕЗАННАЯ МЫШЬ ДЛЯ НИКИ! 2.svg" alt="mish"></a>
+                <p>Logitech G collaborated with more than 50 pro players to find the perfect shape, weight and feel combined with LIGHTSPEED wireless and HERO 25K sensor.
+
+                    SPECS & DETAILS
+                    
+                    DIMENSIONS
+                    
+                    Height: 125 mm
+                    Width: 63.5 mm
+                    Depth: 40 mm
+                    Weight: 80 g
+                    Cable length: 1.8 m</p>
+            </div>
+          </div>
+          <button class="modal__close2">Закрыть</button>
+        </div>
+      </div> 
+      <!-- коврик -->
+      <div class="modal3 modal-global">
+        <div class="modal__content">
+          <div class="block-gears3">
+            <div class="block-gears__items">
+                <img src="./img/mousepadblock.svg" alt="mousepad">
+                <p>ARTISAN NINJA FX HAYATE OTSU
+                    Artisan is a mousepad manufacturer from Japan. Their mousepads are known to be the endgame of mousepads. They build their mousepads with high-quality fabrics. The weaves are tight and precise which makes the quality control spectacular.
+                    
+                    SPECIFICATIONS
+                    PROPERTIES
+                    
+                    Material    Fabric
+                    Stitched edges    Yes
+                    Colour    Red
+                    
+                    SIZE & WEIGHT
+                    
+                    Thickness    4 mm
+                    Width    490 mm
+                    Depth    420 mm </p>
+            </div>
+          </div>
+          <button class="modal__close">Закрыть</button>
+        </div>
+      </div>           
+      <!-- моник -->
+          <div class="block-gears4">
+            <div class="block-gears__items">
+                <img src="./img/BLOCKmonik.svg" alt="monik">
+                <P></P>
+            </div>
+          </div>
+          <!-- уши -->
+          <div class="block-gears5">
+            <div class="block-gears__items">
+                <img src="./img/head.svg" alt="head">
+
+            </div>
+          </div>
 </body>
 </html>

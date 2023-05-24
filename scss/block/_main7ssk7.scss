@@ -1,6 +1,6 @@
 .block-artur__info{
     position: relative;
-    z-index: 1000;
+    z-index: 900;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: .8rem;
@@ -42,7 +42,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 5em;
+        margin-right: 10em;
         transition: all 1s ease-in-out;
     }
 

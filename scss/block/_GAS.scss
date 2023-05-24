@@ -1,0 +1,52 @@
+.gear_and_settings{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   position: relative;
+   z-index: 7;
+
+    .menu__GAS{
+        display: flex;
+        gap: 69px;
+    }
+
+    .menu__GAS-item{
+        display: flex;
+        border-radius: 15px;
+        max-width: 152px;
+        max-height: 330px;
+        position: relative;
+    }
+
+    img{
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .hidden{
+        transform: scale(1.1);
+    }
+
+    .hidden{
+        opacity: 0;
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .image-container {
+        position: relative;
+    }
+    
+    .hidden {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    
+    .hidden:hover {
+        opacity: 1;
+    }
+
+}

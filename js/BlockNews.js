@@ -28,8 +28,8 @@ var news = [
   
     gsap.fromTo(
       ".slider__matches",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 0.3 }
+      { opacity: 0},
+      { opacity: 1, duration: 0. }
     );
   
     updateNews();
@@ -37,4 +37,4 @@ var news = [
   // блок с перезагрузки
   updateNews();
   // время между картинками массива
-  setInterval(rotateNews, 5000);
+  setInterval(rotateNews, 10000);

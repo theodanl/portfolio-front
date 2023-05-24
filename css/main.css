@@ -25,7 +25,7 @@
 
 .block-artur__info {
   position: relative;
-  z-index: 1000;
+  z-index: 900;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 0.8rem;
@@ -63,7 +63,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 5em;
+  margin-right: 10em;
   transition: all 1s ease-in-out;
 }
 .block-artur__info .artur__img:hover {
@@ -208,4 +208,48 @@
   margin-left: 5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.gear_and_settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 7;
+}
+.gear_and_settings .menu__GAS {
+  display: flex;
+  gap: 69px;
+}
+.gear_and_settings .menu__GAS-item {
+  display: flex;
+  border-radius: 15px;
+  max-width: 152px;
+  max-height: 330px;
+  position: relative;
+}
+.gear_and_settings img {
+  border-radius: 50px;
+  cursor: pointer;
+}
+.gear_and_settings .hidden {
+  transform: scale(1.1);
+}
+.gear_and_settings .hidden {
+  opacity: 0;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.gear_and_settings .image-container {
+  position: relative;
+}
+.gear_and_settings .hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.gear_and_settings .hidden:hover {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
