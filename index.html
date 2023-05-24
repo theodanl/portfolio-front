@@ -9,17 +9,16 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/global.css">
+    
        <!-- ПЛАГИНЫ -->
        <script src="./js/gsap/gsap.min.js" defer></script>
        <script src="./js/gsap/ScrollSmoother.min.js" defer></script>
        <script src="./js/gsap/ScrollTrigger.min.js" defer></script>
+       <script src="./js/script.js" defer></script>
        <script src="./js/gear.js" defer></script>
-    <script src="./js/popup1.js" defer></script>
-    <script src="./js/popup2.js" defer></script>
-    <script src="./js/popup3.js" defer></script>
-    <script src="./js/popup4.js" defer></script>
-    <script src="./js/popup5.js" defer></script>
-    <script src="./js/script.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/fix.js" defer></script>
+    <script src="./js/scrollTrigger.js" defer></script>
     <script src="./js/BlockNews.js" defer></script>
 
     <!-- ФРЕЙМ -->
@@ -40,16 +39,16 @@
                 <header class="header">
                     <nav>
                         <ul class="header__menu">
-                            <li class="header__menu-items"><a href="#">About</a></li>
-                            <li class="header__menu-items"><a href="#">Achievements</a></li>
-                            <li class="header__menu-items"><a href="#">Gear and Settings</a></li>
-                            <li class="header__menu-items"><a href="#">Interviews</a></li>
+                            <li class="header__menu-items"><a href="#about">About</a></li>
+                            <li class="header__menu-items"><a href="#matches">Achievements</a></li>
+                            <li class="header__menu-items"><a href="#devisec">Gear and Settings</a></li>
+                            <li class="header__menu-items"><a href="#interviews">Interviews</a></li>
                         </ul>
                     </nav>
                 </header>
                 <main class="main">
                     <!-- ПРЕВЬЮ -->
-                    <section class="ssk7-title">
+                    <section id="prewiew" class="ssk7-title">
                         <div class="block-artur__info">
                             <div class="block-artur-main__title">
                                 <h1 class="title__main">7ssk7</h1>
@@ -63,7 +62,7 @@
                                 </div>
                             </div>
                             <div class="artur__img">
-                                <img src="./img/Component 1.svg" alt="7ssk7">
+                                <img class="artur_gsap" src="./img/Component 1.svg" alt="7ssk7">
                             </div>
                         </div>
                     </section>
@@ -71,7 +70,7 @@
                     <div class="elipse-5 elipse"></div>
                     <div class="elipse-6 elipse"></div>
                     <div class="elipse-7 elipse"></div>
-                    <section class="ssk7-about">  
+                    <section id="about" class="ssk7-about">  
                         <div class="ssk7-about__content">
                             <h1 class="ssk7-about__title">About</h1>
                             <div class="ssk7-about__banner">
@@ -84,141 +83,104 @@
                     <div class="elipse-11 elipse"></div>
                     <div class="elipse-8 elipse"></div>
                     <div class="elipse-12 elipse"></div>
-                    <h1 class="slider__matches-title">Achievements</h1>
                     <!-- СЛАЙДЕР МАТЧИ -->
-                    <section class="slider__matches">
+                    <section id="matches" class="slider__matches">
+                        <h1 class="slider__matches-title">Achievements</h1>
                         <div class="stock_order">
                             <div class="stock_order"><img class="order_img" src="./img/slider1.svg" alt="stock"></div>
                         </div>
                     </section>
                     <!-- ДЕВАЙСЫ -->
-                    <h1 class="GAS-title">Gear and Setup</h1>
-                    <section class="gear_and_settings">
+                    <h1 id="open-modal-btn" class="GAS-title">Gear and Setup</h1>
+                    <div class="elipse-13 elipse"></div>
+                    <div class="elipse-14 elipse"></div>
+                    <div class="elipse-15 elipse"></div>
+                    <section id="devisec" class="gear_and_settings">
                         <!-- модалка -->
-
-
                         <div class="menu__GAS">
                             <div class="menu__GAS-item">           
-                                <div id="gears1" class="image-container-1 container-img">
+                                <div  class="image-container-1 container-img">
                                     <img class="visible" src="./img/klava.svg" alt="klava">
                                     <img class="hidden" src="./img/klava (2).svg" alt="klava1">
                                 </div>
                             </div>  
                             <div class="menu__GAS-item">
-                                <div id="gears2" class="image-container-2 container-img">
+                                <div class="image-container-2 container-img">
                                     <img class="visible" src="./img/mish.svg" alt="mish">
                                     <img class="hidden" src="./img/mish (1).svg" alt="mish1">
                                 </div>
                             </div>
                             <div class="menu__GAS-item">
-                                <div id="gears3" class="image-container-3 container-img">
+                                <div  class="image-container-3 container-img">
                                     <img class="visible" src="./img/kovrik.svg" alt="kovrik">
                                     <img class="hidden" src="./img/kovrik (1).svg" alt="kovrik1">
                                 </div>
                             </div>
                             <div class="menu__GAS-item">
-                                <div id="gears4" class="image-container-4 container-img">
+                                <div  class="image-container-4 container-img">
                                     <img class="visible" src="./img/моник.svg" alt="monik">
                                     <img class="hidden" src="./img/моник (1).svg" alt="monik1">
                                 </div>
                             </div>
                             <div class="menu__GAS-item">
-                                <div id="gears5" class="image-container-5 container-img">
+                                <div  class="image-container-5 container-img">
                                     <img class="visible" src="./img/headset.jpg" alt="headset">
                                     <img class="GAS-img__hover hidden" src="./img/headset (1).svg" alt="headset1">
                                 </div>
                             </div>
                         </div>
                     </section>
+                    <!-- Секция с интерью -->
+                    <h1 class="interviews-title">Interviews</h1>
+                    <section id="interviews" class="interviews">
+                        <div class="interviews-video"><iframe width="938" height="330" src="https://www.youtube.com/embed/vAfm2xbCwWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    </section>
+                    <div class="elipse-17 elipse"></div>
+                    <div class="elipse-16 elipse"></div>
                 </main>
               
                 <footer class="footer">
 
                 </footer>
+                <button id="scrollToTopBtn" class="scroll-to-top-btn"><img class="butUP" src="./img/кнопка нверх.svg" alt="up"></button>
             </div>
         </div>
     </div>
-    <!-- клава -->
-    <div class="modal modal-global">
-        <div class="modal__content">
-          <div class="block-gears1">
-            <div class="block-gears__items">
-                <a href="#"><img src="./img/BLOCKKLAVA.svg" alt="klava"></a>
-                <P>The tournament-proven PRO gaming keyboard.
-
-                    SPECS & DETAILS
-                    
-                    DIMENSIONS
-                    
-                    Height: 34 mm
-                    Width: 361 mm
-                    Depth: 153 mm</P>
-            </div>
-          </div>
-          <button class="modal__close">Закрыть</button>
+    <!-- модалка с гиарс-->
+    <div class="modal" id="my-modal">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                </svg>
+            </button>
+            <h2>G PRO KEYBOARD</h2>
+        <div class="gears-items__inner-1 gears_global">
+            <img src="./img/BLOCKKLAVA.svg" alt="klava">
+            <span>The tournament-proven PRO gaming keyboard. SPECS & DETAILS. DIMENSIONS. Height: 34 mm, <br> Width:  361 mm, Depth: 153 mm</span>
         </div>
-      </div>       
-      <!-- мышка -->
-      <div class="modal2 modal-global">
-        <div class="modal__content">
-          <div class="block-gears2">
-            <div class="block-gears__items">
-                <a href="#"><img src="./img/НЕОБРЕЗАННАЯ МЫШЬ ДЛЯ НИКИ! 2.svg" alt="mish"></a>
-                <p>Logitech G collaborated with more than 50 pro players to find the perfect shape, weight and feel combined with LIGHTSPEED wireless and HERO 25K sensor.
-
-                    SPECS & DETAILS
-                    
-                    DIMENSIONS
-                    
-                    Height: 125 mm
-                    Width: 63.5 mm
-                    Depth: 40 mm
-                    Weight: 80 g
-                    Cable length: 1.8 m</p>
-            </div>
-          </div>
-          <button class="modal__close2">Закрыть</button>
+        <h2>G PRO MOUSE</h2>
+        <div class="gears-items__inner-2 gears_global">
+            <img src="./img/НЕОБРЕЗАННАЯ МЫШЬ ДЛЯ НИКИ! 2.svg" alt="mish">
+            <span>Logitech G collaborated with more <br> than 50 pro players to find the perfect shape,  weight and feel combined <br> with LIGHTSPEED wireless and HERO 25K sensor. SPECS & DETAILS. DIMENSIONS. Height: 125 mm, Width: 63.5 mm, Depth: 40 mm, Weight: 80 g, <br> Cable length: 1.8 m.</span>
+        </div>   
+        <h2>ARTISAN NINJA FX HAYATE OTSU</h2> 
+        <div class="gears-items__inner-3 gears_global">
+            <img src="./img/mousepadblock.svg" alt="mousepad">
+            <span>Artisan is a mousepad manufacturer from Japan. Their mousepads are known to be the endgame of mousepads. They build their mousepads with high-quality fabrics. The weaves are tight and precise which makes the quality control spectacular. SPECIFICATIONS PROPERTIES. Material - Fabric, Stitched edges - Yes, Colour - Red. SIZE & WEIGHT. Thickness - 4 mm, Width - 490 mm, <br> Depth - 420 mm </span>
         </div>
-      </div> 
-      <!-- коврик -->
-      <div class="modal3 modal-global">
-        <div class="modal__content">
-          <div class="block-gears3">
-            <div class="block-gears__items">
-                <img src="./img/mousepadblock.svg" alt="mousepad">
-                <p>ARTISAN NINJA FX HAYATE OTSU
-                    Artisan is a mousepad manufacturer from Japan. Their mousepads are known to be the endgame of mousepads. They build their mousepads with high-quality fabrics. The weaves are tight and precise which makes the quality control spectacular.
-                    
-                    SPECIFICATIONS
-                    PROPERTIES
-                    
-                    Material    Fabric
-                    Stitched edges    Yes
-                    Colour    Red
-                    
-                    SIZE & WEIGHT
-                    
-                    Thickness    4 mm
-                    Width    490 mm
-                    Depth    420 mm </p>
-            </div>
-          </div>
-          <button class="modal__close">Закрыть</button>
+        <h2>ROG Swift PG259QN</h2>
+        <div class="gears-items__inner-4 gears_global">
+            <img src="./img/BLOCKmonik.svg" alt="monik">
+            <span>The ROG Swift PG259QN monitor supports a screen refresh rate <br> of 360 Hz, making it as much as 4% more responsive than its closest competitors. 7ssk7 plays with 1600x900 screen resolution and 16:9 scaling.</span>
         </div>
-      </div>           
-      <!-- моник -->
-          <div class="block-gears4">
-            <div class="block-gears__items">
-                <img src="./img/BLOCKmonik.svg" alt="monik">
-                <P></P>
-            </div>
-          </div>
-          <!-- уши -->
-          <div class="block-gears5">
-            <div class="block-gears__items">
-                <img src="./img/head.svg" alt="head">
-
-            </div>
-          </div>
+        <h2>G PRO X HEADSET</h2>
+        <div class="gears-items__inner-5 gears_global">
+            <img src="./img/head.svg" alt="head">
+            <span>Pro-grade comms and precision you need to win thanks to PRO-G 50 mm drivers, next-gen surround sound, and BLUE VO!CE. SPECS & DETAILS. DIMENSIONS. PHYSICAL SPECIFICATIONS. Length: 138 mm, Width: 94 mm, Height: 195 mm, <br> Weight: 370 g, Charging cable length: 1.8 m</span>
+        </div>
+    </div>       
 </body>
 </html>

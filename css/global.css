@@ -2,6 +2,8 @@
     margin-top: 5rem ;
     margin-left: 5rem;
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 8;
 }
 
 /* Стили для основного контента страницы */
@@ -9,65 +11,89 @@
     position: relative;
     z-index: 1;
   }
+
   
   /* Стили для модального окна */
-  .modal-global {
+  .modal {
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
     align-items: center;
     justify-content: center;
-    z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.8); /* Затемнение заднего фона */
+    overflow-y: auto;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-  }
+    transition: opacity .4s, visibility .4s;
+}
 
-  .modal2{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.8); /* Затемнение заднего фона */
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-  }
-  
-  .modal.open {
+.modal__box {
+    position: relative;
+    max-width: 1200px;
+    padding: 45px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal__close-btn svg path {
+    transition: fill .4s;
+}
+
+.modal__close-btn:hover svg path {
+    fill: blue;
+}
+
+.modal__close-btn:active svg path {
+    fill: rgb(186, 53, 0);
+}
+
+.modal.open {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .modal__content {
-    background-color: #ffffcc; /* Цвет модального окна */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .modal__close {
-    border: none;
-    background-color: #cccccc; /* Цвет кнопки закрытия */
-    color: #ffffff; /* Цвет текста кнопки закрытия */
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .modal__close:hover {
-    background-color: #999999; /* Цвет кнопки закрытия при наведении */
-  }
+}
 
+.modal.open .modal__box {
+    transform: scale(1);
+}
+
+.gears_global{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+span{
+    margin: 0;
+    padding: 0;
+    font-family: 'Audiowide';
+    color: #2D2D2D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* vidos */
   .block-gears1{
     margin-top: 5rem;
   }
@@ -77,4 +103,43 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .interviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 7;
+  }
+
+  .interviews-title{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 8;
+  }
+
+  .interviews-video{
+    border-radius: 40px; /* Закругление углов, значение может быть на ваше усмотрение */
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scroll-to-top-btn.show {
+    opacity: 1;
   }

@@ -157,10 +157,10 @@
 .content .elipse-7 {
   background: linear-gradient(106.5deg, rgba(255, 230, 0, 0.8) 7.41%, rgba(255, 92, 0, 0.8) 129.56%);
   filter: blur(20px);
-  width: 225px;
-  height: 225px;
+  width: 340px;
+  height: 340px;
   left: 15rem;
-  bottom: -1rem;
+  bottom: 11rem;
 }
 .content .elipse-8 {
   background: linear-gradient(146.58deg, rgba(255, 230, 0, 0.8) 3.99%, rgba(255, 92, 0, 0.8) 139.51%);
@@ -200,6 +200,46 @@
   height: 225px;
   left: 20em;
   top: 59em;
+}
+.content .elipse-13 {
+  background: linear-gradient(295.56deg, rgba(255, 230, 0, 0.8) -28.58%, rgba(255, 92, 0, 0.8) 148.79%);
+  filter: blur(20px);
+  width: 340px;
+  height: 340px;
+  left: 76em;
+  top: 113em;
+}
+.content .elipse-14 {
+  background: linear-gradient(112.76deg, rgba(255, 230, 0, 0.8) 25.12%, rgba(255, 92, 0, 0.8) 89.81%);
+  filter: blur(20px);
+  width: 235px;
+  height: 235px;
+  left: 22em;
+  top: 98em;
+}
+.content .elipse-15 {
+  background: linear-gradient(295.48deg, rgba(255, 230, 0, 0.8) -25.64%, rgba(255, 92, 0, 0.8) 208.12%);
+  filter: blur(20px);
+  width: 235px;
+  height: 235px;
+  left: 20em;
+  top: 117em;
+}
+.content .elipse-16 {
+  background: linear-gradient(295.56deg, rgba(255, 230, 0, 0.8) -28.58%, rgba(255, 92, 0, 0.8) 148.79%);
+  filter: blur(20px);
+  width: 340px;
+  height: 340px;
+  left: 78em;
+  top: 145em;
+}
+.content .elipse-17 {
+  background: linear-gradient(261.9deg, rgba(255, 230, 0, 0.8) -32.39%, rgba(255, 92, 0, 0.8) 133.48%);
+  filter: blur(20px);
+  width: 140px;
+  height: 140px;
+  left: 85em;
+  top: 132em;
 }
 
 .slider__matches-title {
